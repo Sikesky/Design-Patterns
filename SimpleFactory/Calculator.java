@@ -11,7 +11,10 @@ public class Calculator {
         String operator = scanner.next();
         System.out.println("请输入数字B：");
         double numberB = scanner.nextDouble();
-        double result = Operation.GetResult(numberA,numberB,operator);
+        Operation op = OperationFactory.createOperation(operator);
+        op.setNumberA(numberA);
+        op.setNumberB(numberB);
+        double result = op.GetResult();
         System.out.println("运算结果是：" + result);
     }
 }
