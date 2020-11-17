@@ -16,8 +16,8 @@ public class CalPrice {
         }
         System.out.println("请输入活动模式(normal=无活动,rebate=打折,return=满减)：");
         String pattern = scanner.next();
-        CashSuper cashSuper = CashFactory.cashFactory(pattern);
-        double res = cashSuper.acceptCash(totalPrice);
+        CashContext cashContext = new CashContext(pattern);
+        double res = cashContext.getResult(totalPrice);
         System.out.println("您需要支付：" + res);
     }
 }
