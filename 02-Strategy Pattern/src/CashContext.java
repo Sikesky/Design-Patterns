@@ -7,7 +7,7 @@ public class CashContext {
                 cashSuper = new CashNormal();
                 break;
             case "rebate":
-                cashSuper = new CashRebate(0.8);
+                cashSuper = new CashRebate(0.7);
                 break;
             case "return":
                 cashSuper = new CashReturn(300,100);
