@@ -1,4 +1,4 @@
-public class Pursuit {
+public class Pursuit implements IGiveGift{
     SchoolGirl mm;
 
     public Pursuit(SchoolGirl mm) {

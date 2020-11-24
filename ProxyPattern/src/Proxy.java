@@ -1,19 +1,19 @@
-public class Proxy {
-    SchoolGirl mm;
+public class Proxy implements IGiveGift{
+    Pursuit gg;
 
     public Proxy(SchoolGirl mm) {
-        this.mm = mm;
+        this.gg = new Pursuit(mm);
     }
 
     public void GiveDolls(){
-        System.out.println(mm.getName() + "送你洋娃娃");
+        gg.GiveDolls();
     }
 
     public void GiveFlowers(){
-        System.out.println(mm.getName() + "送你鲜花");
+        gg.GiveFlowers();
     }
 
     public void GiveChocolate(){
-        System.out.println(mm.getName() + "送你巧克力");
+        gg.GiveChocolate();
     }
 }
